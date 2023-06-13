@@ -1,239 +1,264 @@
 body {
-    font-family: Arial, sans-serif;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    background-size: 200% 200%;
-    background-image: linear-gradient(45deg, #F78BFD, #AFE9FF, #BF4482);
-    animation: gradient 20s ease infinite;
-  }
+  font-family: Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background-size: 200% 200%;
+  background-image: linear-gradient(45deg, #F78BFD, #AFE9FF, #BF4482);
+  animation: gradient 20s ease infinite;
+  cursor: url('images/cursor.png'), auto;
 
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  header {
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-
-  @keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+a,
+button {
+  cursor: url('images/cursor_hover.png'), pointer;
+}
+
+header {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+nav ul li a {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 1px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+  background: transparent;
+  overflow: hidden;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(45deg, rgba(255, 16, 95, 0.7), rgba(191, 64, 191, 0.7));
+  z-index: -1;
+  border-radius: 5px;
+  transition: opacity 0.8s ease;
+  opacity: 0;
+}
+
+nav a:hover:before {
+  opacity: 1;
+}
+
+#connect-wallet {
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(270deg, #FF105F 0%, #B021B0 100%);
+  background-size: 200% 200%;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: url('images/cursor_hover.png'), pointer;
+  outline: none;
+  transition: background-position 0.5s ease;
+  /* This line adds a smooth transition */
+}
+
+#connect-wallet:hover {
+  background-position: right bottom;
+  color: #fff;
+}
+
+#connect-wallet:active {
+  transform: scale(0.95);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+section {
+  padding: 50px;
+}
+
+section h1,
+section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
 .arts {
-    overflow: hidden;
-    padding: 60px 0;
-    white-space: nowrap;
-    position: relative;
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
 }
 
 .arts:before,
 .arts:after {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    content: "";
-    z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
 }
 
 #hero {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px; /* Adjust as necessary */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  /* Adjust as necessary */
 }
 
 #hero-text {
-    max-width: 60%; /* Adjust as necessary */
+  max-width: 60%;
+  /* Adjust as necessary */
 }
 
 #hero h1 {
-    font-size: 4.1em; /* Adjust as necessary */
-    margin-bottom: 20px; /* Adjust as necessary */
+  font-size: 4.1em;
+  /* Adjust as necessary */
+  margin-bottom: 20px;
+  /* Adjust as necessary */
 }
 
 #hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px; /* Adjust as necessary */
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  /* Adjust as necessary */
 }
 
 .gradient-button {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    color: white;
-    border: none;
-    cursor: pointer;
-    background-size: 200% auto;
-    border-radius: 5px;
-    transition: 0.5s;
-    background-image: linear-gradient(to right, #F78BFD, #ffad06);
-    box-shadow: 0px 4px 15px -5px #F78BFD;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-  }
-  
-  .gradient-button:hover {
-    background-position: right center; /* change the direction of the gradient on hover */
-  }
-  
-  .gradient-button:active {
-    transform: scale(0.95); /* slightly reduce the size of the button on click */
-  }
-  
-  .gradient-button:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, .1);
-    z-index: -1;
-    transition: all .5s;
-    transform: scale(0);
-    pointer-events: none;
-  }
-  
-  .gradient-button:hover:before {
-    transform: scale(2);
-  }
-  
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white;
+  border: none;
+  cursor: url('images/cursor_hover.png'), pointer;
+  background-size: 200% auto;
+  border-radius: 5px;
+  transition: 0.5s;
+  background-image: linear-gradient(to right, #F78BFD, #ffad06);
+  box-shadow: 0px 4px 15px -5px #F78BFD;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.gradient-button:hover {
+  background-position: right center;
+  /* change the direction of the gradient on hover */
+}
+
+.gradient-button:active {
+  transform: scale(0.95);
+  /* slightly reduce the size of the button on click */
+}
+
+.gradient-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .1);
+  z-index: -1;
+  transition: all .5s;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.gradient-button:hover:before {
+  transform: scale(2);
+}
+
 
 #hero-image {
-    max-width: 40%; /* Adjust as necessary */
-    height: auto;
+  max-width: 40%;
+  /* Adjust as necessary */
+  height: auto;
 }
 
 
 .art-images {
-    display: inline-block;
-    animation: 80s slide infinite linear;
+  display: inline-block;
+  animation: 80s slide infinite linear;
 }
 
 .art-images img {
-    height: 150px; /* adjust as needed */
-    margin: 0 0;
-}
-  
-  #logo {
-    height: 40px; /* Adjust as needed */
-  }
-  
-  nav ul li a {
-    display: inline-block;
-    width: 120px;
-    text-align: center;
+  height: 150px;
+  /* adjust as needed */
+  margin: 0 0;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
-nav a {
-    margin-left: 1px;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    position: relative;
-    background: transparent;
-    overflow: hidden;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-nav a:hover {
-    color: #fff;
-}
-
-nav a:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(45deg, rgba(255,16,95,0.7), rgba(191,64,191,0.7));
-    z-index: -1;
-    border-radius: 5px;
-    transition: opacity 0.8s ease;
-    opacity: 0;
-}
-
-nav a:hover:before {
-    opacity: 1;
-}
-
-#connect-wallet {
-    border: none;
-    border-radius: 5px;
-    background: linear-gradient(270deg, #FF105F 0%, #B021B0 100%);
-    background-size: 200% 200%;
-    color: #fff;
-    padding: 10px 20px;
-    font-weight: bold;
-    cursor: pointer;
-    outline: none;
-    transition: transform 0.1s ease;
-}
-
-#connect-wallet:hover {
-    background-position: right bottom;
-    color: #fff;
-}
-
-#connect-wallet:active {
-    transform: scale(0.95);
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+#logo {
+  height: 40px;
+  /* Adjust as needed */
 }
 
 
-  section {
-    padding: 50px;
-  }
-  
-  section h1, section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  footer {
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  footer a {
-    color: #fff;
-  }
-  
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #fff;
+}
