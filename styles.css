@@ -1,13 +1,12 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Outfit', sans-serif;
   color: #fff;
   margin: 0;
   padding: 0;
   background-size: 200% 200%;
-  background-image: linear-gradient(45deg, #F78BFD, #AFE9FF, #BF4482);
+  background-image: radial-gradient(#F78BFD, #AFE9FF, #BF4482);
   animation: gradient 20s ease infinite;
   cursor: url('images/cursor.png'), auto;
-
 }
 
 @keyframes gradient {
@@ -29,22 +28,9 @@ button {
   cursor: url('images/cursor_hover.png'), pointer;
 }
 
-header {
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
+h2 {
+  font-size: 3.1em;
+  margin-bottom: 20px;
 }
 
 nav ul li a {
@@ -55,9 +41,11 @@ nav ul li a {
 
 nav ul {
   list-style-type: none;
-  padding: 0;
+  padding: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between; /* Added this line */
+  width: 100%; /* Added this line */
 }
 
 nav a {
@@ -73,6 +61,8 @@ nav a {
 
 nav a:hover {
   color: #fff;
+  text-decoration: none;
+
 }
 
 nav a:before {
@@ -104,7 +94,7 @@ nav a:hover:before {
   cursor: url('images/cursor_hover.png'), pointer;
   outline: none;
   transition: background-position 0.5s ease;
-  /* This line adds a smooth transition */
+  white-space: nowrap; /* Prevents the text inside the button from wrapping */
 }
 
 #connect-wallet:hover {
@@ -116,78 +106,30 @@ nav a:hover:before {
   transform: scale(0.95);
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-section {
-  padding: 50px;
-}
-
-section h1,
-section h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-
-.arts {
-  overflow: hidden;
-  padding: 60px 0;
-  white-space: nowrap;
-  position: relative;
-}
-
-.arts:before,
-.arts:after {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  content: "";
-  z-index: 2;
-}
-
-#hero {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 20px;
-  /* Adjust as necessary */
-}
 
 #hero-text {
   max-width: 60%;
-  /* Adjust as necessary */
 }
 
 #hero h1 {
   font-size: 4.1em;
-  /* Adjust as necessary */
   margin-bottom: 20px;
-  /* Adjust as necessary */
 }
 
 #hero p {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  /* Adjust as necessary */
+}
+
+#hero-image {
+  max-width: 100%;
+  height: auto;
 }
 
 .gradient-button {
   padding: 10px 20px;
   font-size: 1.2em;
-  color: white;
+ color: white;
   border: none;
   cursor: url('images/cursor_hover.png'), pointer;
   background-size: 200% auto;
@@ -202,12 +144,12 @@ section h2 {
 
 .gradient-button:hover {
   background-position: right center;
-  /* change the direction of the gradient on hover */
+  cursor: url('images/cursor_hover.png'), pointer;
+
 }
 
 .gradient-button:active {
   transform: scale(0.95);
-  /* slightly reduce the size of the button on click */
 }
 
 .gradient-button:before {
@@ -228,37 +170,286 @@ section h2 {
   transform: scale(2);
 }
 
-
-#hero-image {
-  max-width: 40%;
-  /* Adjust as necessary */
-  height: auto;
-}
-
-
 .art-images {
   display: inline-block;
   animation: 80s slide infinite linear;
 }
 
+#logo {
+  height: 40px;
+}
+
 .art-images img {
   height: 150px;
-  /* adjust as needed */
   margin: 0 0;
 }
 
-#logo {
-  height: 40px;
-  /* Adjust as needed */
+.arts {
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.art-images {
+  display: flex;
+  white-space: nowrap;
+  animation: slide 80s linear infinite;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.arts:before,
+.arts:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+#about {
+  padding: 0px 0px 60px 0px;
+}
+
+#about-text {
+  max-width: 60%;
+}
+
+#about h2 {
+  font-size: 3.1em;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  max-width: 100%; /* Adjust as necessary */
+  text-align: justify;
+}
+
+#about-image {
+  max-width: 100%;
+  height: auto;
+}
+
+#roadmap {
+  padding: 0px 0px 60px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#roadmap h2 {
+  font-size: 3.1em;
+  margin-bottom: 20px;
+}
+
+#roadmap p {
+  font-size: 1.2rem;
+  max-width: 60%; /* Adjust as necessary */
+  text-align: justify;
+}
+
+.zoom-container {
+  position: relative;
+  width: 60%;
+}
+
+.zoom-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: none;
+}
+
+.magnifying-glass {
+  display: none;
+  position: absolute;
+  border: 2px solid #F78BFD;
+  border-radius: 50%;
+  cursor: none;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  z-index: 100;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 3000px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#community {
+  padding: 0px 0px 60px 0px;
+}
+
+#community-text {
+  max-width: 60%;
+}
+
+#community p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  max-width: 100%; /* Adjust as necessary */
+  text-align: justify;
+}
+
+#community-image {
+  max-width: 100%;
+  height: auto;
+}
+
+#team {
+  margin-bottom: 40px;
+}
+
+.team-member {
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  background: radial-gradient(circle, #ECAF65, #E08FB9, #CE5FC7);
+  background-size: 200% 200%;
+  animation: teamGradient 10s ease infinite;
+}
+
+@keyframes teamGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 
-footer {
-  color: #fff;
-  text-align: center;
+.team-member-photo-container {
+  position: relative;
+  margin-top: -30px; /* Adjust as needed */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 50px);
+}
+
+.team-member-photo {
+  border-radius: 50%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.text-center {
+  margin-bottom: 75px;
+}
+
+.team-member h3 {
+  z-index: 2;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+#faq {
   padding: 20px;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: radial-gradient(circle, #BF4482, #ECBAA1);
+  background-size: 200% 200%;
+  animation: faqGradient 25s ease infinite;
+}
+
+@keyframes faqGradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.faq-question {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#cta {
+  padding: 60px 0;
+}
+
+#cta h2 {
+  font-size: 3.1em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #AB4684; /* Change this to the color you want */
+}
+
+footer {
+  padding: 20px 0;
+  color: #fff;
 }
 
 footer a {
   color: #fff;
 }
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer h4 {
+  margin-bottom: 15px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer .form-control {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background: linear-gradient(270deg, #FF105F 0%, #B021B0 100%);
+  background-size: 200% 200%;
+  color: #fff;
+  border: none;
+  transition: background-position 0.5s ease;
+}
+
+.btn-primary:hover {
+  background-position: right bottom;
+  color: #fff;
+  cursor: url('images/cursor_hover.png'), pointer;
+}
+
+.btn-primary:active {
+  transform: scale(0.95);
+}
+
