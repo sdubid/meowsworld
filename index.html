@@ -13,38 +13,59 @@
 </head>
 
 <body>
-    <header class="container">
-        <div class="row">
-            <div class="col-3 d-flex justify-content-between align-items-center">
-                <a href="#"><img id="logo" src="images/logo.png" alt="Meows World Logo"></a>
-                <nav class="col-md-1">
-                    <ul class="d-flex align-items-center justify-content-between">
-                        <li><a href="#giveaways">Giveaways</a></li>
-                        <li><a href="#meowslist">MeowsList</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#marketplace">Marketplace</a></li>
-                    </ul>
-                </nav>
-                <div class="col-md-9 text-right">
-                    <a href="#" id="connect-wallet">Connect Wallet</a>
-                </div>
+    <header>
+        <a class="navbar-brand" href="#"><img id="logo" src="images/logo.png" alt="Meows World Logo"></a>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent text-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#giveaways">Giveaways<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                        <path
+                            d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                    </svg></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#meowslist">MeowsList<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                        <path
+                            d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                    </svg></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                        <path
+                            d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                    </svg></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#marketplace">Marketplace<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                        <path
+                            d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                    </svg></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="connect-wallet">Connect Wallet<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                        <path
+                            d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                    </svg></a></li>
+                </ul>
             </div>
-        </div>
-    </header>   
+        </nav>
+    </header>
 
     <section id="hero" class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-5" id="hero-text">
+        <div class="row align-items-center justify-content-center justify-content-md-start">
+            <div class="col-12 col-md-6 text-center text-md-left order-1 order-md-0" id="hero-text">
                 <h1>Meows World NFT</h1>
+                <img class="d-md-none" id="hero-image" src="images/CATV.png" alt="Description of image">
                 <p>Collection of 10 000 digital NFTs with the real-life perks for owners. Become a part of a big family</p>
                 <button class="gradient-button">JOIN NOW</button>
             </div>
-            <div class="col-md-5 offset-md-1 d-flex justify-content-start">
-                <img id="hero-image" src="images/CATV.png" alt="Description of image">
+            <div class="col-12 col-md-5 offset-md-1 d-flex justify-content-center justify-content-md-start order-0 order-md-1">
+                <img class="d-none d-md-block" id="hero-image" src="images/CATV.png" alt="Description of image">
             </div>
         </div>
-    </section>
-
+    </section> 
+    
     <section class="arts">
         <div class="row">
             <div class="art-images">
@@ -81,38 +102,49 @@
         </div>
     </section>
 
-    <section id="about" class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <img id="about-image" src="images/yarn.png" alt="Description of image">
-            </div>
-            <div class="col-md-6" id="about-text">
-                <h2>Discover Meows World</h2>
-                <p>The Meows World were born out of Old Nanna's scientific experiments and her desire for peoples
-                    generational wealth. Project contains 10'000 adorable kitties, each with one-of-a-kind traits and
-                    passion. Get in early for your generational wealth. See where this takes her and the project itself.
-                </p>
-                <button class="gradient-button">JOIN NOW</button>
-            </div>
+<section id="about" class="container">
+    <div class="row align-items-center flex-column flex-md-row">
+        <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start order-2 order-md-0">
+            <img id="about-image" src="images/yarn.png" alt="Description of image">
         </div>
-    </section>
+        <div class="col-12 col-md-6 text-center text-md-left order-1 order-md-1" id="about-text">
+            <h2>Discover Meows World</h2>
+            <p>The Meows World were born out of Old Nanna's scientific experiments and her desire for peoples
+                generational wealth. Project contains 10'000 adorable kitties, each with one-of-a-kind traits and
+                passion. Get in early for your generational wealth. See where this takes her and the project itself.
+            </p>
+            <button class="gradient-button">JOIN NOW</button>
+        </div>
+    </div>
+</section>
 
-    <section id="roadmap">
-        <h2>Roadmap</h2>
-        <p>Nanna decided to arrange a hustle and breed cats in order to give generations their wealth. She was too
-            carried away by the project and something began to go wrong. She doesn't stop at cats because she becomes
-            obsessed with them and starts creating anything that can bring wealth to her followers. Guess the secrets of
-            the roadmap and dive into this journey with Nanna.</p>
-        <div class="zoom-container">
-            <img class="zoom-img" src="images/roadmap.png" alt="Roadmap">
+
+    <section id="roadmap" class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Roadmap</h2>
+                <p>Nanna decided to arrange a hustle and breed cats in order to give generations their wealth. She was
+                    too
+                    carried away by the project and something began to go wrong. She doesn't stop at cats because she
+                    becomes
+                    obsessed with them and starts creating anything that can bring wealth to her followers. Guess the
+                    secrets of
+                    the roadmap and dive into this journey with Nanna.</p>
+            </div>
         </div>
     </section>
+    <div class="zoom-container">
+        <img class="zoom-img" src="images/roadmap.png" alt="Roadmap">
+    </div>
+
 
     <section id="community" class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-10 col-md-6 mx-auto order-md-1" id="community-text">
                 <h2>Community, Perks, Income</h2>
-                <p>a project that will not only give you an image, but include you into the fastest growing community across NFT environment, that will give a wealth of real life perks and that will make you rich.</p>
+                <p>Meows World is a project that will not only give you an image, but include you into the fastest
+                    growing community
+                    across NFT environment. It will give a wealth of real life perks and that will make you rich.</p>
                 <button class="gradient-button">JOIN NOW</button>
             </div>
             <div class="col-10 col-md-4 mx-auto offset-md-2 order-md-2">
@@ -120,7 +152,7 @@
             </div>
         </div>
     </section>
-    
+
     <section id="team" class="container">
         <h2 class="text-center">Meet the Chaircats Team</h2>
         <div class="row">
@@ -131,7 +163,8 @@
                     </div>
                     <h3>0xNanna</h3>
                     <p class="position">CMO</p>
-                    <p class="description flex-grow-1">Chief meowing officer has his vision on the project, the state of NFT right now and how to utilize it</p>
+                    <p class="description flex-grow-1">Chief meowing officer has his vision on the project, the state of
+                        NFT right now and how to utilize it</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -141,7 +174,8 @@
                     </div>
                     <h3>FilterSoul</h3>
                     <p class="position">Meowtastic Art Director</p>
-                    <p class="description flex-grow-1">She know how to use her paws to create a meowtastic art, that`s why she is in Meows world family</p>
+                    <p class="description flex-grow-1">She know how to use her paws to create a meowtastic art, that`s
+                        why she is in Meows world family</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -151,7 +185,8 @@
                     </div>
                     <h3>Sdubid</h3>
                     <p class="position">Purr Programmer</p>
-                    <p class="description flex-grow-1">They uses paws and brain on a daily basis to solve the hardest issues that can occur in the Meows World</p>
+                    <p class="description flex-grow-1">They uses paws and brain on a daily basis to solve the hardest
+                        issues that can occur in the Meows World</p>
                 </div>
             </div>
         </div>
@@ -166,19 +201,18 @@
         <div class="row faq-item">
             <div class="col-12">
                 <h3 class="faq-question">Why MeowsWorld?</h3>
-                <p class="faq-answer">Owning a Meows World kitty not only grants you a digital masterpiece to cherish, but also grants you access to an array of exclusive perks, such as participation in interactive events, competitions, and a chance to influence the ongoing narrative of the Meows World saga. Each kitty is embedded with special metadata, ensuring its authenticity and unique value within the project.</p>
+                <p class="faq-answer">Owning a Meows World kitty not only grants you a digital masterpiece to cherish,
+                    but also grants you access to an array of exclusive perks, such as participation in interactive
+                    events, competitions, and a chance to influence the ongoing narrative of the Meows World saga. Each
+                    kitty is embedded with special metadata, ensuring its authenticity and unique value within the
+                    project.</p>
             </div>
         </div>
         <div class="row faq-item">
             <div class="col-12">
                 <h3 class="faq-question">How many MeowsWorld there are going to be?</h3>
-                <p class="faq-answer">There will be 10’000 unique one-of-a-kind digital artwork stored on the blockchain.</p>
-            </div>
-        </div>
-        <div class="row faq-item">
-            <div class="col-12">
-                <h3 class="faq-question">How many MeowsWorld there are going to be?</h3>
-                <p class="faq-answer">There will be 10’000 unique one-of-a-kind digital artwork stored on the blockchain.</p>
+                <p class="faq-answer">There will be 10’000 unique one-of-a-kind digital artwork stored on the
+                    blockchain.</p>
             </div>
         </div>
         <div class="row faq-item">
@@ -196,13 +230,16 @@
         <div class="row faq-item">
             <div class="col-12">
                 <h3 class="faq-question">What are the second royalties?</h3>
-                <p class="faq-answer">MeowsWorld will receive 5% of all second royalties to help fund our adventure and deliver value to the amazing community.</p>
+                <p class="faq-answer">MeowsWorld will receive 5% of all second royalties to help fund our adventure and
+                    deliver value to the amazing community.</p>
             </div>
         </div>
         <div class="row faq-item">
             <div class="col-12">
                 <h3 class="faq-question">What is a MeowList?</h3>
-                <p class="faq-answer">It is a whitelist. It is a select list of addresses or individuals with access to specific NFTs or projects. It rewards community members and grants exclusive opportunities based on predetermined criteria.</p>
+                <p class="faq-answer">It is a whitelist. It is a select list of addresses or individuals with access to
+                    specific NFTs or projects. It rewards community members and grants exclusive opportunities based on
+                    predetermined criteria.</p>
             </div>
         </div>
     </section>
@@ -215,7 +252,7 @@
             </div>
         </div>
     </section>
-    
+
     <footer class="container">
         <div class="row">
             <div class="col-md-4">
@@ -231,10 +268,26 @@
             <div class="col-md-4">
                 <h4>Pages</h4>
                 <ul>
-                    <li><a href="#giveaways">Giveaways</a></li>
-                    <li><a href="#meowlist">MeowList</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#marketplace">Marketplace</a></li>
+                    <li><a href="#giveaways">Giveaways<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                            </svg></a></li>
+                    <li><a href="#meowlist">MeowList<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                            </svg></a></li>
+                    <li><a href="#blog">Blog<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                            </svg></a></li>
+                    <li><a href="#marketplace">Marketplace<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                            </svg></a></li>
                 </ul>
             </div>
             <div class="col-md-4">
@@ -251,7 +304,7 @@
                 </form>
             </div>
         </div>
-    </footer>    
+    </footer>
 
     <script>
         var artImages = document.querySelector(".art-images");
@@ -259,7 +312,6 @@
     </script>
 
     <script>
-        // Keep the JavaScript code as previously provided for the magnifying glass functionality
         document.addEventListener('DOMContentLoaded', function () {
             const zoomContainer = document.querySelector('.zoom-container');
             const zoomImg = document.querySelector('.zoom-img');
@@ -274,8 +326,9 @@
                 magnifyingGlass.style.backgroundSize = `${zoomImg.offsetWidth * 2}px ${zoomImg.offsetHeight * 2}px`;
 
                 const containerRect = zoomContainer.getBoundingClientRect();
-                const xPos = event.clientX - containerRect.left;
-                const yPos = event.clientY - containerRect.top;
+                const imgRect = zoomImg.getBoundingClientRect();
+                const xPos = event.clientX - imgRect.left;
+                const yPos = event.clientY - imgRect.top;
 
                 const glassPosX = xPos - magnifyingGlass.clientWidth / 2;
                 const glassPosY = yPos - magnifyingGlass.clientHeight / 2;
@@ -292,6 +345,8 @@
             });
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
