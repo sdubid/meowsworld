@@ -51,8 +51,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%; /* Adjust as necessary */
-  max-width: 1200px; /* Adjust as necessary */
+  width: 90%;
+  /* Adjust as necessary */
+  max-width: 1200px;
+  /* Adjust as necessary */
 }
 
 nav ul {
@@ -63,7 +65,8 @@ nav ul {
 }
 
 nav a {
-  margin-left: 1rem; /* Adjust as necessary */
+  margin-left: 1rem;
+  /* Adjust as necessary */
   color: #fff;
   text-decoration: none;
   padding: 10px;
@@ -152,7 +155,7 @@ nav a:hover:before {
 .gradient-button {
   padding: 10px 20px;
   font-size: 1.2em;
- color: white;
+  color: white;
   border: none;
   cursor: url('images/cursor_hover.png'), pointer;
   background-size: 200% auto;
@@ -221,8 +224,13 @@ nav a:hover:before {
 }
 
 @keyframes slide {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .arts:before,
@@ -241,6 +249,7 @@ nav a:hover:before {
 
 #about-text {
   max-width: 100%;
+  
 }
 
 #about h2 {
@@ -252,16 +261,12 @@ nav a:hover:before {
   font-size: 1.2rem;
   margin-bottom: 20px;
   text-align: justify;
+  max-width: 100%;
 }
 
 #about-image {
   max-width: 100%;
   height: auto;
-}
-
-#roadmap {
-  padding: 0px 0px 60px 0px;
-  text-align: center;
 }
 
 #roadmap h2 {
@@ -271,7 +276,8 @@ nav a:hover:before {
 
 #roadmap p {
   font-size: 1.2rem;
-  max-width: 100%; /* Adjust as necessary */
+  max-width: 100%;
+  /* Adjust as necessary */
   text-align: justify;
 }
 
@@ -281,6 +287,7 @@ nav a:hover:before {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .zoom-img {
@@ -317,7 +324,8 @@ nav a:hover:before {
 #community p {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  max-width: 100%; /* Adjust as necessary */
+  max-width: 100%;
+  /* Adjust as necessary */
   text-align: justify;
 }
 
@@ -344,9 +352,11 @@ nav a:hover:before {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -355,7 +365,8 @@ nav a:hover:before {
 
 .team-member-photo-container {
   position: relative;
-  margin-top: -30px; /* Adjust as needed */
+  margin-top: -30px;
+  /* Adjust as needed */
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -403,13 +414,15 @@ nav a:hover:before {
 
 @keyframes faqGradient {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
+
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
+
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 
@@ -429,7 +442,8 @@ nav a:hover:before {
 }
 
 .highlight {
-  color: #AB4684; /* Change this to the color you want */
+  color: #AB4684;
+  /* Change this to the color you want */
 }
 
 footer {
@@ -483,8 +497,8 @@ footer .form-control {
 @media (max-width: 992px) {
   #hero h1 {
     font-size: 2em;
-}
-  
+  }
+
   #hero p {
     font-size: 1.1rem;
   }
@@ -513,13 +527,34 @@ footer .form-control {
 #hero img {
   max-width: 40%;
 }
+
+#about h2 {
+  font-size: 2.2em;
 }
 
-@media (max-width: 576px) {
-  *, *::before, *::after {
-    padding: 0;
-    margin: 0;
-  }
+#about p {
+  font-size: 1rem;
+  text-align: justify;
+  max-width: 80%;
+}
+
+#about img {
+  max-width: 30%;
+  margin-bottom: 10px;
+}
+
+#roadmap h2 {
+  font-size: 2.2em;
+}
+
+#roadmap p {
+  font-size: 1rem;
+  max-width: 80%;
+}
+#roadmap h2 {
+  font-size: 2em;
+}
+
 }
 
 
@@ -540,6 +575,22 @@ footer .form-control {
     margin-bottom: 10px;
   }
 
+  #about h2 {
+    font-size: 2em;
+  }
+
+  #about img {
+    max-width: 20%;
+  }
+
+  #about p {
+    max-width: 80%;
+    text-align: justify;
+  }
+
+  #roadmap p {
+    max-width: 80%;
+    text-align: justify;
+  }
+  
 }
-
-
